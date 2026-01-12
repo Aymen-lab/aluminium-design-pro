@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/aluminium-design-pro/",   // 🔥 WICHTIG für GitHub Pages
+  base: mode === "production" ? "/aluminium-design-pro/" : "/",   // GitHub Pages in production, root for local dev
   server: {
     host: "::",
     port: 8080,
