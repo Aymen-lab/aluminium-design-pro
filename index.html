@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ⭐ REQUIRED FOR GITHUB PAGES + VITE PREVIEW -->
+    <!-- Required for GitHub Pages + Vite production -->
     <base href="/aluminium-design-pro/" />
 
     <title>AluPremium | Menuiserie Aluminium Sur Mesure - Fenêtres, Portes, Façades</title>
@@ -24,6 +24,8 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- IMPORTANT: no leading slash, so Vite rewrites it correctly -->
+    <script type="module" src="src/main.tsx"></script>
   </body>
 </html>
